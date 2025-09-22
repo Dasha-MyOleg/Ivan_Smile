@@ -1,0 +1,223 @@
+.c-contact-choices .formField {
+    padding: 20px;
+    background: white;
+}
+
+.c-contact-choices .formField {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.l-content-article--form .c-form__wrapper {
+    position: relative;
+    padding: 30px 20px;
+    max-width: none !important;
+}
+
+@media only screen and (min-width: 600px) {
+    .c-contact-choices .formField {
+        max-height: 520px;
+    }
+    
+    .c-contact-choices .formField > span {
+        max-width: 50%;
+    }
+    
+    .c-contact-choices .formField {
+        padding: 20px;
+    }
+    
+    .l-content-article--form .c-form__wrapper {
+        padding: 40px 60px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .c-contact-choices .formField {
+        max-height: 420px;
+    }
+    
+    .c-contact-choices .formField > span {
+        max-width: 33%;
+    }
+
+    .c-contact-choices .formField {
+        padding: 50px 40px 40px;
+    }
+
+    .l-content-article--form .c-form__wrapper {
+        padding: 50px 80px;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    .l-content-article--form .c-form__wrapper {
+        max-width: 1000px !important;
+    }
+}
+
+.c-contact-choices input[type="radio"] + label {
+    position: relative;
+    margin-left: 0;
+    padding-left: 3rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.c-contact-choices input[type="radio"] + label::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 18px !important;
+  height: 18px !important;
+  border: 2px solid black;
+  border-radius: 11px;
+  background: none !important;
+  transform: none !important;
+}
+
+.c-contact-choices input[type="radio"] + label::before {
+    top: 3px;
+    left: 0;
+}
+
+.c-contact-choices input[type="radio"] + label:active::before,
+.c-contact-choices input[type="radio"] + label:focus::before,
+.c-contact-choices input[type="radio"] + label:hover::before {
+    background: none;
+}
+
+.c-contact-choices input[type="radio"] + label:active::after,
+.c-contact-choices input[type="radio"] + label:focus::after,
+.c-contact-choices input[type="radio"] + label:hover::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 7px;
+  background: black;
+  transform: none;
+  top: 7px;
+  left: 4px;
+}
+
+.c-contact-choices input[type="radio"]:checked + label::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 7px;
+  background: black;
+  transform: none;
+  top: 7px;
+  left: 4px;
+}
+
+select[readonly] {
+  background: #CFCFCF;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+select[readonly]:hover {
+    border: 2px solid black;
+    outline: none;
+}
+
+input, select, textarea {
+  font-weight: 400;
+}
+
+select option {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+input[type=file] {
+    font-size: 1.6rem;
+}
+
+.c-contact-choices .formField .formError, .c-contact-choices .formField a[name] {
+    display: none;
+}
+
+.c-contact-choices legend {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    margin-top: 0;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.l-content-article--form .c-form {
+    background: none;
+    margin-bottom: 60px;
+}
+
+.l-content-article--form .c-form form {
+    margin-bottom: 0;
+}
+
+.l-content-article--form .c-form h2 {
+    margin-bottom: 0 !important;
+}
+
+.l-content-article--form .c-form__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #86c7db;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+}
+
+.l-content-article--form .c-form .formNote p {
+    font-weight: normal;
+}
+
+.c-intro .c-notice {
+    position: relative;
+}
+
+.c-intro .c-notice::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background:#f2f3f4;
+    height: 100%;
+    z-index: -1;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+  font-weight: normal;
+}
+
+.c-form {
+    background: none;
+}
+
+.c-form__wrapper {
+    padding: 0;
+}
+
+.c-form select[size="1"],
+.c-form input[type=text],
+.c-form input[type=email],
+.c-form input[type=file],
+.c-form select,
+.c-form textarea {
+    border-radius: 0;
+}
